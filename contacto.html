@@ -64,19 +64,17 @@
 
                 <h1>Envíanos tu consulta</h1>
 
-                <form form method="post" action="enviar.php">
-
+                <form form method="get" action="enviar.php">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" required>
-                    
+                    <input type="text" id="nombre" name="nombre" required>
+
                     <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="correo" required>
-                    
+                    <input type="email" id="correo" name="correo" required>
+
                     <label for="comentario">Comentario:</label>
-                    <textarea name="comentario" id="comentario" rows="4" required></textarea>
-                    
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
                     <button type="submit">Enviar</button>
-                
                 </form>
             </div>
 
