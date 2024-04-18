@@ -1,0 +1,325 @@
+body {
+    background:white;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-height: 50px;
+}
+
+.logo img {
+    margin-left: 20px;
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+main {
+    text-align: center;
+    padding: 1em;
+}
+
+.menu{
+    height: 4em;
+    margin-bottom: 1em;
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#contraido {
+    position: relative;
+    visibility: visible;
+    top: .5em;
+}
+
+#desplegado {
+    position: relative;
+    visibility: hidden;
+    bottom: 1.75em;
+}
+
+#desplegable {
+    position: relative;
+    background-color: white;
+    padding: 0 1em;
+    top:-60px;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+
+#desplegable h3{
+    text-decoration: none;
+    color: black;
+    margin: 0.5em 0;
+    text-align: left;
+}
+
+.linkMenu a:active, a:link, a:visited  {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('../IMG/imagenInicial.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+main section a:hover {
+    color: #e5ff00;
+}
+
+.articulos {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.articulo {
+    flex-basis: calc(50% - 20px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.articulo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.articulo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.articulo a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacto-info, .contacto-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contacto-info h1, .contacto-form h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto-info ul li {
+    list-style: none;
+    padding: 5px;
+}
+
+.contacto-form form {
+    max-width: 400px;
+}
+
+.contacto-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto-form input[type="text"], .contacto-form input[type="email"], .contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto-form button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacto-form button:hover {
+    color: #e5ff00;
+}
+
+.mapa {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.acordion {
+    margin-bottom: 1em;
+}
+
+#vinculos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    transition: .3s;
+}
+
+#imagenVinculoHombre {
+    width: 100%;
+}
+
+#imagenVinculoHombre:hover {
+    width: 120%;
+}
+
+#imagenVinculoMujer {
+    width: 100%;
+}
+
+#imagenVinculoMujer:hover {
+    width: 120%;
+}
+
+#imagenVinculoColegial {
+    width: 100%;
+}
+
+#imagenVinculoColegial:hover {
+    width: 120%;
+}
+
+.banners img{
+    width: 100%;
+}
+
+.linkRedes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.imagen{
+    width: 100%;
+}
+
+/*----------- Footer ------------*/
+
+footer {
+    padding: 3em 2em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.datos{
+    padding-top: 1em;
+}
+
+.datos a{
+    color: white;
+    text-decoration: none;
+}
+
+.datos a:hover {
+    color: #ff0000;
+}
+
+.newsletter h3{
+    align-items: center;
+    margin-top: 0;
+}
+
+.datos ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.newsletter{
+    padding-top: .5em;
+}
+
+.divisor {
+    margin: 1.5em 0;
+}
+
+.btnf{
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border-width: 0px;
+}
