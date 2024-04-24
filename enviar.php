@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+/* if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $comentario = $_POST["comentario"];
@@ -15,5 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Redirige a una página de confirmación
     header("Location: confirmacion.html");
-}
+} */
+
+$name = $_POST['nombre'];
+$email = $_POST['correo'];
+$subject = $_POST['nombre'];
+$message = $_POST['comentario'];
+
+$mailheader = "From:".$name."<".$email.">\r\n";
+
+$recipient = "pabloagustinruiz92@gmail.com";
+
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
+
+header("Location: confirmacion.html");
 ?>
