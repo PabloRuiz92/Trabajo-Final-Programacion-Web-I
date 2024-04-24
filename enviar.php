@@ -19,14 +19,13 @@
 
 $name = $_POST['nombre'];
 $email = $_POST['correo'];
-$subject = $_POST['nombre'];
 $message = $_POST['comentario'];
 
 $mailheader = "From:".$name."<".$email.">\r\n";
 
 $recipient = "pabloagustinruiz92@gmail.com";
 
-mail($recipient, $subject, $message, $mailheader) or die("Error!");
+mail($recipient, "My subject", $message, $mailheader) or die("Error!");
 
 header("Location: confirmacion.html");
 ?>
