@@ -1,5 +1,7 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+header("Location: confirmacion.html");
+die();
+//if ($_SERVER["REQUEST_METHOD"] == "POST") {
  /*   $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $comentario = $_POST["comentario"];
@@ -14,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($destinatario, $asunto, $mensaje);
  */   
     // Redirige a una página de confirmación
-    header("Location: confirmacion.html");
-    die();
-}
+    //header("Location: confirmacion.html");
+//}
 ?>
