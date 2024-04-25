@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombre"];
+ /*   $nombre = $_POST["nombre"];
     $correo = $_POST["correo"];
     $comentario = $_POST["comentario"];
     
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Envía el correo
     mail($destinatario, $asunto, $mensaje);
-    
+ */   
     // Redirige a una página de confirmación
     header("Location: confirmacion.html");
 }
