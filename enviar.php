@@ -15,5 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  */   
     // Redirige a una página de confirmación
     header("Location: confirmacion.html");
+    die();
 }
 ?>
