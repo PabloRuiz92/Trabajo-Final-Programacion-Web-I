@@ -323,3 +323,52 @@ footer {
     border-radius: 5px;
     border-width: 0px;
 }
+
+
+.tarjeta:hover {
+    box-shadow: 5px 10px 8px #bb6d07;
+    transition: .3s;
+}
+
+.tarjeta {
+    width: 30em;
+    min-width: 20%;
+    background-color: #fff;
+    margin: 1em;
+    padding: 1em;
+    border-radius: .5em;
+    border: #bb6d07 thin solid;
+    transition: .3s;
+}
+
+.marcoTarjeta {
+    background-color: #bb6d07;
+    padding: .8em;
+    border-radius: .5em;
+}
+
+.marcoTarjeta img {
+    width: 100%;
+    max-width: 100%;
+    height: 20em;
+    border-radius: .5em;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textoTarjeta {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: .5em;
+    margin-top: 8px;
+}
+
+.art {
+    font-size: 2em;
+    text-align: center;
+}
