@@ -239,6 +239,7 @@ main section a:hover {
 
 #imagenVinculoHombre {
     width: 100%;
+    height: auto;
 }
 
 #imagenVinculoHombre:hover {
@@ -247,6 +248,7 @@ main section a:hover {
 
 #imagenVinculoMujer {
     width: 100%;
+    height: auto;
 }
 
 #imagenVinculoMujer:hover {
@@ -255,6 +257,7 @@ main section a:hover {
 
 #imagenVinculoColegial {
     width: 100%;
+    height: auto;
 }
 
 #imagenVinculoColegial:hover {
@@ -263,6 +266,7 @@ main section a:hover {
 
 .banners img{
     width: 100%;
+    height: auto;
 }
 
 .linkRedes {
@@ -276,6 +280,7 @@ main section a:hover {
 
 .imagen{
     width: 100%;
+    height: auto;
 }
 
 /*----------- Footer ------------*/
@@ -368,7 +373,7 @@ footer {
     border-radius: .5em;
 }
 
-.imagen {
+.fotoTarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,3 +387,19 @@ footer {
     margin-top: 8px;
 }
 
+.textoTarjeta h4 {
+    margin-bottom: 0px;
+}
+
+.divTarjeta {
+    display: inline-flex;
+}
+
+.botonTarjeta {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 21.28px;
+}

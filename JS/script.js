@@ -1,5 +1,6 @@
 var clickMenuAbrir=document.getElementById("contraido");
 var clickMenuCerrar=document.getElementById("desplegado");
+var btnCompraOn=document.getElementById("btnCompra");
 
 clickMenuAbrir.addEventListener("click",()=>{
     document.getElementById("desplegable").style.top="-50px";
@@ -32,4 +33,33 @@ function cambioImagen() {
         x = 0;
     } 
     setTimeout("cambioImagen()", 5000);
+}
+
+var numero = 0;
+var contador = document.getElementById('contador');
+
+function aumentar() {
+  numero++;
+  contador.textContent = numero;
+  activar();
+}
+
+function disminuir() {
+  if (numero > 0) {
+    numero--;
+    contador.textContent = numero;
+    activar();
+  }
+}
+
+function activar(){
+    if (numero > 0) {
+        btnCompraOn.disabled = false;
+    } else {
+        btnCompraOn.disabled = true;
+    }
+}
+
+function comprar() {
+    alert('¡Gracias por su compra!');
 }
