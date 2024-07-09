@@ -109,11 +109,15 @@ main {
 }
 
 .banner {
-    background-image: url('../IMG/Banner1.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-size: cover;
-    color: #fff;
-    padding: 100px;
-    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    color: white;
 }
 
 .banner div {
@@ -125,6 +129,29 @@ main {
 .banner h1 {
     font-size: 36px;
     margin: 20px 0;
+}
+
+.banner h2 {
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 30px 15px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .banner .boton {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 }
 
 .boton {
